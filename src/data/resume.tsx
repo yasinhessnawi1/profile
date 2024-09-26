@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "A 2025 graduate from the Software Engineering Bachelor’s program at NTNU Gjøvik.",
   summary:
-    "Yasin, a 2025 graduate from the Software Engineering Bachelor’s program at NTNU Gjøvik, is passionate about programming and building digital solutions. With experience in front-end and back-end development, data processing, and AI, Yasin enjoys tackling challenging problems and is committed to continuous learning. Having worked as a student teacher, Yasin has a strong foundation in both technical and communication skills, emphasizing professionalism and goal-oriented teamwork. Eager to take on dynamic consulting projects and contribute to a driven team environment.",
+    "Yasin, a 2025 graduate from the Software Engineering Bachelor’s program at NTNU Gjøvik, is passionate about programming and building digital solutions. With experience in fullstack development, data processing, cybersecurity, application/system development, cloud computing/devops, infrastructure as code and AI/ML, Yasin enjoys tackling challenging problems and is committed to continuous learning. Having worked as a teaching assistant, Yasin has a strong foundation in both technical and communication skills, emphasizing professionalism and goal-oriented teamwork. Eager to take on dynamic consulting projects and contribute to a driven team environment.",
   avatarUrl: "/me.JPG",
   skills: [
     "javascript",
@@ -41,7 +41,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/blog", icon: NotebookIcon, label: "Skills & Blog" },
   ],
   contact: {
     email: "yasinhessnawi1@gmail.com",
