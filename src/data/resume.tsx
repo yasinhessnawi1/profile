@@ -14,6 +14,7 @@ export const DATA = {
   avatarUrl: "/me.JPG",
   skills: [
     "javascript",
+    "terraform",
     "java",
     "javafx",
     "python",
@@ -66,22 +67,19 @@ export const DATA = {
 
   work: [
     {
-      company: "FRK. LOVISE",
-      href: "https://atomic.finance",
+      company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
+      href: "https://www.ntnu.no/",
       badges: [],
-      location: "Sandnessjøen",
-      title: "BARISTA",
-      logoUrl: "/frk-lovise.png",
-      start: "July 2021",
-      end: "Sept 2023",
+      location: "Gjøvik",
+      title: "UNIVERSITY TEACHING ASSISTANT",
+      logoUrl: "/ntnu.svg",
+      start: "Aug 2024",
+      end: "Des 2024",
       description:
-        "• creating and designing of menus for the cafe\n" +
-          "• opening activities within the cafe(preparations for service) " +
-          "• preparation of food and cold as well as hot drinks\n" +
-          "• area cleaning\n" +
-          "• janitorial activities (garden and structural maintenance)\n" +
-          "• management of register\n" +
-          "• development of a budgeting and accounting desktop application to assist the cafe with their financial activities (part of university course)",
+          "• preparation and operation of labs for students" +
+          "  • assisting students with understanding the content of lectures " +
+          "• correcting and grading students' academic work" +
+          "• preparing students for examination ",
     },
     {
     company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
@@ -99,21 +97,7 @@ export const DATA = {
 "  • correction of class projects and assignments" +
 "• assessing students knowledge levels and assisting them in reaching the demanded standards",
 },
-    {
-company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
-    href: "https://www.ntnu.no/",
-    badges: [],
-    location: "Gjøvik",
-    title: "UNIVERSITY TEACHING ASSISTANT",
-    logoUrl: "/ntnu.svg",
-    start: "Aug 2024",
-    end: "Des 2024",
-    description:
-"• preparation and operation of labs for students" +
-"  • assisting students with understanding the content of lectures " +
-        "• correcting and grading students' academic work" +
-"• preparing students for examination ",
-},
+
     {
       company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
     href: " https://i.ntnu.no/wiki/-/wiki/Norsk/LAOS+-+Opplæring+for+læringsassistenter",
@@ -127,16 +111,26 @@ company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
 "• educated on creating safe, communicative and constructive environments " + "• learned principles of conflict resolution" +
 "• learned how to asses levels of understanding and provide ideal guidance",
 },
+    {
+      company: "FRK. LOVISE",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Sandnessjøen",
+      title: "BARISTA",
+      logoUrl: "/frk-lovise.png",
+      start: "July 2021",
+      end: "Sept 2023",
+      description:
+          "• creating and designing of menus for the cafe\n" +
+          "• opening activities within the cafe(preparations for service) " +
+          "• preparation of food and cold as well as hot drinks\n" +
+          "• area cleaning\n" +
+          "• janitorial activities (garden and structural maintenance)\n" +
+          "• management of register\n" +
+          "• development of a budgeting and accounting desktop application to assist the cafe with their financial activities (part of university course)",
+    },
   ],
   education: [
-    {
-      school: "Sandnessjøen VGS",
-      href: "https://sandnessjoen.vgs.no",
-      degree: "VITNEMÅL, QF level 4",
-      logoUrl: "/vgs.png",
-      start: "aug 2019",
-      end: "june 2022",
-    },
     {
       school: " Norges teknisk-naturvitenskapelige universitet",
       href: " https://www.ntnu.no",
@@ -144,6 +138,14 @@ company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
       logoUrl: "/ntnu.svg",
       start: "aug 2022",
       end: "june 2025",
+    },
+    {
+      school: "Sandnessjøen VGS",
+      href: "https://sandnessjoen.vgs.no",
+      degree: "VITNEMÅL, QF level 4",
+      logoUrl: "/vgs.png",
+      start: "aug 2019",
+      end: "june 2022",
     },
 
   ],
@@ -167,6 +169,25 @@ company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
       ],
       image: "/java-project.png",
       video: "",
+    },
+    {
+      title: "1.2.watch (kotlin)",
+      href: "https://github.com/yasinhessnawi1/1-2-watch",
+      dates: "sep 2024 - nov 2024",
+      active: true,
+      description:" Developed 1.2.Watch, pronounced “When to Watch”, is a user-friendly application designed to help you keep track of all your favorite media—be it movies, series, or anime. With a friendly and intuitive interface, you’ll have all the information about your beloved media in one place. Know exactly when the next episode airs and where to watch it, if available. Find out when new movies are released or become available for streaming. Discover new and related content based on what you already love. (Mobile Programming course exam)(KOTLIN)\n",
+      technologies: [
+        "Kotlin", "XML", "Android Studio",
+      ],
+      links: [
+        {
+          type: "Repository",
+          href: "https://github.com/yasinhessnawi1/1-2-watch",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/1.2.Watch.mp4",
     },
     {
       title: "Frk. Economy",
