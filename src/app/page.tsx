@@ -115,6 +115,45 @@ export default function Page() {
             </div>
           </div>
       </section>
+      <section id="latest-work">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Latest Work
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Post-Graduate Projects
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Recent projects and ventures after completing my bachelor&apos;s degree.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {DATA.latestWork?.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -124,12 +163,10 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  My Projects During My Bachelor's Degree
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  java application with cli to complex web applications. Here are a few of my
-                  favorites.
+                  A collection of projects I&apos;ve worked on during my bachelor&apos;s degree.
                 </p>
               </div>
             </div>
@@ -156,9 +193,10 @@ export default function Page() {
           </div>
         </div>
       </section>
+      
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -174,7 +212,7 @@ export default function Page() {
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact

@@ -8,9 +8,9 @@ export const DATA = {
   location: "Gjøvik, Norway",
   locationLink: "https://www.google.com/maps/place/Gjøvik",
   description:
-    "A 2025 graduate from the Software Engineering Bachelor’s program at NTNU Gjøvik.",
+    "A 2025 graduate from the Software Engineering Bachelor's program at NTNU Gjøvik, currently pursuing a Master's in Artificial Intelligence. Co-founder of Safe Media AI AS.",
   summary:
-    "Yasin, a 2025 graduate from the Software Engineering Bachelor’s program at NTNU Gjøvik, is passionate about programming and building digital solutions. With experience in fullstack development, data processing, cybersecurity, application/system development, cloud computing/devops, infrastructure as code and AI/ML, Yasin enjoys tackling challenging problems and is committed to continuous learning. Having worked as a teaching assistant, Yasin has a strong foundation in both technical and communication skills, emphasizing professionalism and goal-oriented teamwork. Eager to take on dynamic consulting projects and contribute to a driven team environment.",
+    "Yasin, a 2025 graduate from the Software Engineering Bachelor's program at NTNU Gjøvik with a grade A thesis and Eurika Prize, is currently pursuing a Master's in Artificial Intelligence. Passionate about programming and building digital solutions, Yasin co-founded Safe Media AI AS and leads the development of Declassifai, a web application for detecting and redacting sensitive documents in PDFs. With experience in fullstack development, data processing, cybersecurity, application/system development, cloud computing/devops, infrastructure as code and AI/ML, Yasin enjoys tackling challenging problems and is committed to continuous learning. Having worked as a teaching assistant, Yasin has a strong foundation in both technical and communication skills, emphasizing professionalism and goal-oriented teamwork. Eager to take on dynamic consulting projects and contribute to a driven team environment.",
   avatarUrl: "/me.JPG",
   skills: [
     "javascript",
@@ -67,6 +67,20 @@ export const DATA = {
 
   work: [
     {
+      company: "Safe Media AI AS",
+      href: "https://safemediai.com/no",
+      badges: [],
+      location: "Norway",
+      title: "CO-FOUNDER",
+      logoUrl: "https://safemediai.com/favicon.ico",
+      start: "Aug 2025",
+      end: "Present",
+      description:
+        "• Co-founded Safe Media AI AS, a company specializing in AI-powered document security solutions" +
+        "• Leading the development and deployment of Declassifai, a web application for detecting and redacting sensitive documents in PDFs" +
+        "• Responsible for strategic direction and product development",
+    },
+    {
       company: "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
       href: "https://www.ntnu.no/",
       badges: [],
@@ -111,33 +125,24 @@ export const DATA = {
 "• educated on creating safe, communicative and constructive environments " + "• learned principles of conflict resolution" +
 "• learned how to asses levels of understanding and provide ideal guidance",
 },
-    {
-      company: "FRK. LOVISE",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Sandnessjøen",
-      title: "BARISTA",
-      logoUrl: "/frk-lovise.png",
-      start: "July 2021",
-      end: "Sept 2023",
-      description:
-          "• creating and designing of menus for the cafe\n" +
-          "• opening activities within the cafe(preparations for service) " +
-          "• preparation of food and cold as well as hot drinks\n" +
-          "• area cleaning\n" +
-          "• janitorial activities (garden and structural maintenance)\n" +
-          "• management of register\n" +
-          "• development of a budgeting and accounting desktop application to assist the cafe with their financial activities (part of university course)",
-    },
+  
   ],
   education: [
     {
-      school: " Norges teknisk-naturvitenskapelige universitet",
-      href: " https://www.ntnu.no",
-      degree: "BACHELOR IN COMPUTER SCIENCE,  EQF level 6",
+      school: "University of Agder",
+      href: "https://www.uia.no",
+      degree: "MASTER IN ARTIFICIAL INTELLIGENCE",
+      logoUrl: "https://www.uia.no/om-uia/designmanual/logoer/uia-horisontal-uten-navn-positiv.png",
+      start: "Aug 2025",
+      end: "June 2027",
+    },
+    {
+      school: "Norges teknisk-naturvitenskapelige universitet",
+      href: "https://www.ntnu.no",
+      degree: "BACHELOR IN COMPUTER SCIENCE, EQF level 6 - Grade A thesis, Eurika Prize (NTNU)",
       logoUrl: "/ntnu.svg",
       start: "aug 2022",
-      end: "june 2025",
+      end: "June 2025",
     },
     {
       school: "Sandnessjøen VGS",
@@ -260,6 +265,52 @@ export const DATA = {
         },
       ],
       image: "/electromart.png",
+      video: "",
+    },
+  ],
+
+  latestWork: [
+    {
+      title: "Declassifai",
+      href: "https://declassifai.com",
+      dates: "Aug 2025 - Present",
+      active: true,
+      description: "Developed Declassifai, a web application for detecting and redacting sensitive documents in PDFs. The application utilizes AI and machine learning to automatically identify sensitive information and provides tools for manual highlighting and redaction. Features include AI-powered automatic detection, customizable redaction modes, and support for various document formats.",
+      technologies: [
+        "AI/ML",
+        "React",
+        "Python",
+        "PDF Processing",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://declassifai.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/dashboard_en.png",
+      video: "",
+    },
+    {
+      title: "Safe Media AI AS",
+      href: "https://safemediai.com",
+      dates: "Aug 2025 - Present",
+      active: true,
+      description: "Co-founded Safe Media AI AS, a company specializing in AI-powered document security solutions. The company is responsible for Declassifai and is developing further products focused on secure document processing and AI-driven security solutions.",
+      technologies: [
+        "AI/ML",
+        "Document Security",
+        "Product Development",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://safemediai.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
       video: "",
     },
   ],
