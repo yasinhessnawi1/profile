@@ -1,12 +1,14 @@
 import { unstable_setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { getResume } from "@/data/get-resume";
+import { getBlogPosts } from "@/data/blog";
 import { TopBar } from "@/components/sections/top-bar";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
 import { Projects } from "@/components/sections/projects";
 import { Toolkit } from "@/components/sections/toolkit";
+import { SkillsBlog, type BlogPostView } from "@/components/sections/skills-blog";
 import { ContactSection } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { SiteDock } from "@/components/sections/site-dock";
@@ -19,6 +21,21 @@ export default async function Home({
   unstable_setRequestLocale(locale);
   const t = await getTranslations("nav");
   const data = getResume(locale);
+  const raw = await getBlogPosts(locale);
+  const posts: BlogPostView[] = raw
+    .sort(
+      (a, b) =>
+        new Date(b.metadata.publishedAt).getTime() -
+        new Date(a.metadata.publishedAt).getTime()
+    )
+    .map((p) => ({
+      slug: p.slug,
+      title: p.metadata.title,
+      publishedAt: p.metadata.publishedAt,
+      summary: p.metadata.summary,
+      level: p.metadata.level,
+      html: p.source,
+    }));
 
   return (
     <>
@@ -35,7 +52,7 @@ export default async function Home({
         <Experience data={data} />
         <Projects data={data} />
         <Toolkit data={data} />
-        {/* SkillsBlog section inserted in Task 10 */}
+        <SkillsBlog posts={posts} locale={locale} />
         <ContactSection data={data} />
       </main>
       <Footer locale={locale} />
