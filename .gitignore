@@ -12,3 +12,11 @@ yarn-error.log*
 package-lock.json
 .idea/*
 .DS_Store
+
+# design reference sources (not shipped)
+Signal Design System/
+# editor/tooling
+.idea/
+.qodo/
+.DS_Store
+tsconfig.tsbuildinfo
