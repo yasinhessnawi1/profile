@@ -9,7 +9,7 @@ describe("getResume", () => {
 
   it("returns Norwegian data for 'no'", () => {
     const no = getResume("no");
-    expect(no.location).toBe("Gjøvik, Norge");
+    expect(no.location).toBe("Norge");
     expect(no.skills["Språk"]).toContain("Python");
   });
 
