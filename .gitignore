@@ -20,3 +20,5 @@ Signal Design System/
 .qodo/
 .DS_Store
 tsconfig.tsbuildinfo
+# local env
+.env*.local
