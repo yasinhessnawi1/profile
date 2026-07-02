@@ -1,4 +1,4 @@
-import BlurFade from "@/components/magicui/blur-fade";
+import { BlurFade } from "@/components/signal/blur-fade";
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
 import { unstable_setRequestLocale } from "next-intl/server";
