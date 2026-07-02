@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "KI · Programvareutvikler · Gründer. Masterstudent i kunstig intelligens og medgründer av Safe Media AI, som bygger Declassifai.",
-    "ogTitle": "Yasin Hessnawi — Jeg bygger intelligente ting"
+    "ogTitle": "Yasin Hessnawi · Jeg bygger intelligente ting"
   },
   "nav": {
     "work": "Arbeid",
@@ -23,7 +23,8 @@
     "resume": "CV",
     "downloadResume": "Last ned CV",
     "findMe": "Finn meg",
-    "chipStudy": "M.Sc. KI @ UiA"
+    "chipStudy": "M.Sc. KI @ UiA",
+    "chipStatus": "Alltid noe på gang"
   },
   "about": { "eyebrow": "Om meg", "index": "01" },
   "experience": {
@@ -47,7 +48,7 @@
     "eyebrow": "Ferdigheter og blogg",
     "index": "05",
     "title": "Notater fra studiene",
-    "subtitle": "Korte oppsummeringer av det jeg lærte i {count} universitetsemner — fra første programmeringskurs til Tsetlin-maskiner.",
+    "subtitle": "Korte oppsummeringer av det jeg lærte i {count} universitetsemner, fra første programmeringskurs til Tsetlin-maskiner.",
     "filterAll": "Alle",
     "filterMasters": "Master",
     "filterBachelor": "Bachelor",
@@ -78,7 +79,7 @@
     "send": "Send melding",
     "sending": "Sender…",
     "sentTitle": "Melding sendt",
-    "sentBody": "Takk — jeg svarer så snart jeg kan.",
+    "sentBody": "Takk, jeg svarer så snart jeg kan.",
     "errorTitle": "Noe gikk galt",
     "errorBody": "Meldingen kunne ikke sendes. Send meg en e-post direkte i stedet.",
     "mailtoFallback": "Åpne e-postapp",
@@ -86,7 +87,7 @@
     "validationEmail": "Skriv inn en gyldig e-postadresse",
     "validationMessage": "Skriv en melding"
   },
-  "footer": { "built": "Designet og bygget i Gjøvik · © {year}" },
+  "footer": { "built": "Designet og bygget i Norge · © {year}" },
   "dock": {
     "top": "Topp",
     "work": "Arbeid",

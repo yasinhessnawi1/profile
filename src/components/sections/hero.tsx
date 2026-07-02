@@ -96,8 +96,8 @@ export function Hero({ data, locale }: { data: ResumeData; locale: string }) {
                   className="object-cover"
                 />
               </div>
-              <MetaChip className="left-[-12%] top-[6%]" icon="map-pin">
-                {data.location}
+              <MetaChip className="left-[-12%] top-[6%]" icon="sparkles">
+                {t("chipStatus")}
               </MetaChip>
               <MetaChip className="bottom-[8%] right-[-10%]" icon="cpu">
                 {t("chipStudy")}

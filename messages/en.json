@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "AI · Software Engineer · Founder. Master's student in Artificial Intelligence and co-founder of Safe Media AI, building Declassifai.",
-    "ogTitle": "Yasin Hessnawi — I build intelligent things"
+    "ogTitle": "Yasin Hessnawi · I build intelligent things"
   },
   "nav": {
     "work": "Work",
@@ -23,7 +23,8 @@
     "resume": "Résumé",
     "downloadResume": "Download résumé",
     "findMe": "Find me",
-    "chipStudy": "M.Sc. AI @ UiA"
+    "chipStudy": "M.Sc. AI @ UiA",
+    "chipStatus": "Usually shipping something"
   },
   "about": { "eyebrow": "About", "index": "01" },
   "experience": {
@@ -47,7 +48,7 @@
     "eyebrow": "Skills & Blog",
     "index": "05",
     "title": "Notes from the coursework",
-    "subtitle": "Short writeups on what I learned across {count} university courses — from first programming to Tsetlin machines.",
+    "subtitle": "Short writeups on what I learned across {count} university courses, from first programming to Tsetlin machines.",
     "filterAll": "All",
     "filterMasters": "Master's",
     "filterBachelor": "Bachelor",
@@ -78,7 +79,7 @@
     "send": "Send message",
     "sending": "Sending…",
     "sentTitle": "Message sent",
-    "sentBody": "Thanks — I'll get back to you soon.",
+    "sentBody": "Thanks, I'll get back to you soon.",
     "errorTitle": "Something went wrong",
     "errorBody": "The message could not be sent. Email me directly instead.",
     "mailtoFallback": "Open email app",
@@ -86,7 +87,7 @@
     "validationEmail": "Please enter a valid email",
     "validationMessage": "Please write a message"
   },
-  "footer": { "built": "Designed & built in Gjøvik · © {year}" },
+  "footer": { "built": "Designed & built in Norway · © {year}" },
   "dock": {
     "top": "Top",
     "work": "Work",
