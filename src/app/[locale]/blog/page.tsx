@@ -16,6 +16,10 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description", { count: posts.length }),
+    alternates: {
+      canonical: locale === "en" ? "/blog" : `/${locale}/blog`,
+      languages: { en: "/blog", no: "/no/blog", "x-default": "/blog" },
+    },
   };
 }
 
@@ -64,7 +68,11 @@ export default async function BlogPage({
                     tone={post.metadata.level === "Master's" ? "signal" : "neutral"}
                     size="sm"
                   >
-                    {post.metadata.level}
+                    {tBlog(
+                      post.metadata.level === "Master's"
+                        ? "filterMasters"
+                        : "filterBachelor"
+                    )}
                   </Badge>
                 </div>
                 <div className="text-base font-medium text-fg group-hover:text-fg-strong">

@@ -19,7 +19,18 @@ export async function generateMetadata({
 }) {
   try {
     const post = await getPost(slug, locale);
-    return { title: post.metadata.title, description: post.metadata.summary };
+    return {
+      title: post.metadata.title,
+      description: post.metadata.summary,
+      alternates: {
+        canonical: locale === "en" ? `/blog/${slug}` : `/${locale}/blog/${slug}`,
+        languages: {
+          en: `/blog/${slug}`,
+          no: `/no/blog/${slug}`,
+          "x-default": `/blog/${slug}`,
+        },
+      },
+    };
   } catch {
     return {};
   }

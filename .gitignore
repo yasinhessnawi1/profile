@@ -9,7 +9,6 @@ yarn-error.log*
 .pnp.js
 .next/*
 .vscode/*
-package-lock.json
 .idea/*
 .DS_Store
 
