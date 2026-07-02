@@ -8,9 +8,15 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import IconCloud from "@/components/magicui/icon-cloud";
 import { Badge } from "@/components/ui/badge";
+import { unstable_setRequestLocale } from "next-intl/server";
 const BLUR_FADE_DELAY = 0.07;
 
-export default function Page() {
+export default async function Page({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">

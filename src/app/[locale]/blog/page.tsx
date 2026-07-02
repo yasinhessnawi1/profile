@@ -1,6 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const metadata = {
   title: "Blog And Learnings",
@@ -9,7 +10,12 @@ export const metadata = {
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default async function BlogPage() {
+export default async function BlogPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
   const posts = await getBlogPosts();
 
   return (
