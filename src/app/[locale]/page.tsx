@@ -39,6 +39,22 @@ export default async function Home({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: data.name,
+            url: "https://yasinhessnawi.online",
+            image: "https://yasinhessnawi.online/me.JPG",
+            jobTitle: data.role,
+            worksFor: { "@type": "Organization", name: "Safe Media AI AS" },
+            alumniOf: { "@type": "CollegeOrUniversity", name: "NTNU" },
+            sameAs: [data.contact.github, data.contact.linkedin],
+          }),
+        }}
+      />
       <a
         href="#main"
         className="sr-only z-[100] rounded-md bg-accent px-4 py-2 text-accent-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
