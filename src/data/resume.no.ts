@@ -3,11 +3,11 @@ import type { ResumeData } from "./resume-types";
 export const RESUME_NO: ResumeData = {
   name: "Yasin Hessnawi",
   initials: "YH",
-  role: "KI · Programvareutvikler · Gründer",
+  role: "KI · Dataingeniør · Gründer",
   location: "Norge",
   avatar: "/me.JPG",
   intro:
-    "Programvareutvikler og masterstudent i kunstig intelligens ved Universitetet i Agder. Jeg liker å bygge ting som er nyttige og som tåler møtet med virkeligheten, fra fullstack-apper til ML-forskning, og er medgründer av Safe Media AI, der jeg leder Declassifai.",
+    "Dataingeniør og masterstudent i kunstig intelligens ved Universitetet i Agder. Jeg liker å bygge ting som er nyttige og som tåler møtet med virkeligheten, fra fullstack-apper til ML-forskning, og er medgründer av Safe Media AI, der jeg leder Declassifai.",
   about:
     "Jeg brenner for programmering og for å bygge digitale løsninger som tåler møtet med virkeligheten. Arbeidet mitt spenner over fullstack-utvikling, sky og DevOps, infrastruktur som kode, cybersikkerhet og KI/ML-forskning. Jeg var med å grunnlegge Safe Media AI AS og leder Declassifai, en app som oppdager og sladder sensitiv informasjon i PDF-er. Som tidligere læringsassistent bryr jeg meg like mye om tydelig kommunikasjon og målrettet lagarbeid som om selve koden.",
   aboutCards: [
