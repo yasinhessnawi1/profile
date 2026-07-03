@@ -1,0 +1,295 @@
+/* ============================================================
+   SIGNAL — token layer. Source of truth: Signal Design System/tokens/*
+   Dark-first: :root IS the dark theme. .theme-light overrides.
+   Font families are provided by next/font (--font-display/sans/mono).
+   `.theme-dark` aliases :root so the next-themes class always resolves.
+   ============================================================ */
+
+:root,
+.theme-dark {
+  /* --- Warm ink neutral ramp --- */
+  --ink-990: #0C0C0A;
+  --ink-950: #101010;
+  --ink-900: #16150F;
+  --ink-850: #1C1B15;
+  --ink-800: #24231C;
+  --ink-750: #2C2B22;
+  --ink-700: #37352B;
+  --ink-600: #4B4A3D;
+  --ink-500: #6B6A5A;
+  --ink-400: #918F7D;
+  --ink-300: #B7B4A2;
+  --ink-200: #D6D3C4;
+  --ink-100: #ECEADE;
+  --ink-050: #F5F2E8;
+  --paper:   #F7F4EC;
+
+  /* --- Signal (electric lime) --- */
+  --signal-700: #7E9E1E;
+  --signal-600: #A6CF2E;
+  --signal-500: #C7F23F;
+  --signal-400: #D7F86E;
+  --signal-300: #E6FBA1;
+  --signal-glow: rgba(199, 242, 63, 0.28);
+
+  /* --- Redact (secondary, sparing) --- */
+  --redact-600: #E0472A;
+  --redact-500: #FF5C3C;
+  --redact-400: #FF8163;
+
+  /* --- Status hues --- */
+  --azure-500: #58B7FF;
+  --amber-500: #F5B93B;
+  --rose-500:  #FF6B81;
+
+  /* --- Semantic aliases (dark default) --- */
+  --bg:            var(--ink-990);
+  --bg-tint:       #100F0A;
+  --surface:       var(--ink-900);
+  --surface-2:     var(--ink-850);
+  --elevated:      var(--ink-800);
+  --overlay:       rgba(8, 8, 6, 0.72);
+
+  --text:          var(--ink-050);
+  --text-strong:   #FBFAF3;
+  --text-muted:    var(--ink-300);
+  --text-subtle:   var(--ink-400);
+  --text-faint:    var(--ink-500);
+  --text-inverse:  var(--ink-990);
+
+  --border:        rgba(236, 234, 222, 0.10);
+  --border-strong: rgba(236, 234, 222, 0.18);
+  --border-signal: rgba(199, 242, 63, 0.45);
+
+  --accent:            var(--signal-500);
+  --accent-hover:      var(--signal-400);
+  --accent-press:      var(--signal-600);
+  --accent-foreground: var(--ink-990);
+  --accent-quiet:      rgba(199, 242, 63, 0.12);
+
+  --link:          var(--signal-400);
+  --link-hover:    var(--signal-300);
+  --focus-ring:    var(--signal-500);
+
+  --success: var(--signal-500);
+  --warning: var(--amber-500);
+  --danger:  var(--redact-500);
+  --info:    var(--azure-500);
+
+  /* --- Type scale --- */
+  --text-2xs:  0.6875rem;
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   1.375rem;
+  --text-xl:   1.75rem;
+  --text-2xl:  2.25rem;
+  --text-3xl:  clamp(2.5rem, 5.2vw, 3.5rem);
+  --text-4xl:  clamp(3.25rem, 8vw, 5.75rem);
+  --text-5xl:  clamp(4rem, 12vw, 9rem);
+
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-semibold: 600;
+  --w-bold:    700;
+
+  --leading-none:  1;
+  --leading-tight: 1.08;
+  --leading-snug:  1.22;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tighter: -0.04em;
+  --tracking-tight:   -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.02em;
+  --tracking-label:   0.16em;
+
+  /* --- Spacing / radius / borders --- */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.5rem; --space-6: 2rem; --space-7: 3rem; --space-8: 4rem;
+  --space-9: 6rem; --space-10: 8rem; --space-11: 11rem;
+
+  --radius-xs: 4px; --radius-sm: 7px; --radius-md: 11px; --radius-lg: 16px;
+  --radius-xl: 24px; --radius-2xl: 32px; --radius-pill: 999px;
+
+  --border-w: 1px; --border-w-strong: 1.5px;
+
+  /* --- Shadows --- */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.30);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.28);
+  --shadow-md: 0 8px 26px rgba(0,0,0,0.36);
+  --shadow-lg: 0 22px 60px rgba(0,0,0,0.48);
+  --shadow-signal: 0 0 0 1px var(--border-signal), 0 10px 40px var(--signal-glow);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.05);
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 140ms; --dur-base: 240ms; --dur-slow: 480ms;
+
+  /* --- Layout --- */
+  --container: 1200px;
+  --container-narrow: 720px;
+  --container-wide: 1360px;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+
+  color-scheme: dark;
+}
+
+.theme-light {
+  --bg:            var(--paper);
+  --bg-tint:       #EFEBDF;
+  --surface:       #FFFFFF;
+  --surface-2:     #F1EEE3;
+  --elevated:      #FFFFFF;
+  --overlay:       rgba(30, 29, 22, 0.45);
+
+  --text:          var(--ink-900);
+  --text-strong:   var(--ink-990);
+  --text-muted:    var(--ink-600);
+  --text-subtle:   var(--ink-500);
+  --text-faint:    var(--ink-400);
+  --text-inverse:  var(--paper);
+
+  --border:        rgba(22, 21, 15, 0.12);
+  --border-strong: rgba(22, 21, 15, 0.22);
+  --border-signal: rgba(126, 158, 30, 0.55);
+
+  --accent:            var(--signal-600);
+  --accent-hover:      var(--signal-700);
+  --accent-press:      var(--signal-700);
+  --accent-foreground: var(--ink-990);
+  --accent-quiet:      rgba(166, 207, 46, 0.16);
+
+  --link:          var(--signal-700);
+  --link-hover:    var(--signal-600);
+  --focus-ring:    var(--signal-600);
+
+  --shadow-xs: 0 1px 2px rgba(30,29,22,0.06);
+  --shadow-sm: 0 2px 10px rgba(30,29,22,0.08);
+  --shadow-md: 0 10px 30px rgba(30,29,22,0.10);
+  --shadow-lg: 0 26px 60px rgba(30,29,22,0.14);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
+
+  color-scheme: light;
+}
+
+/* ---- Display / heading / kicker helpers ---- */
+.display {
+  font-family: var(--font-display);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--tracking-tighter);
+  line-height: var(--leading-tight);
+  color: var(--text-strong);
+}
+.heading {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-snug);
+  color: var(--text-strong);
+}
+.kicker {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+/* ---- Signal ink highlights ---- */
+.mark-signal { color: var(--accent); }
+.mark-underline {
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.14em;
+}
+
+/* ---- Texture / background utilities ---- */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+.bg-dots {
+  background-image: radial-gradient(var(--border-strong) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.bg-grid {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.glow-signal {
+  background: radial-gradient(60% 80% at 70% 0%, var(--signal-glow), transparent 70%);
+}
+
+/* ---- Containers + section rhythm ---- */
+.container        { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.container-narrow { width: 100%; max-width: var(--container-narrow); margin-inline: auto; padding-inline: var(--gutter); }
+.container-wide   { width: 100%; max-width: var(--container-wide); margin-inline: auto; padding-inline: var(--gutter); }
+.section          { padding-block: clamp(56px, 9vw, 118px); }
+
+/* ---- Rendered-MDX reader styles ---- */
+.prose-signal { font-size: 0.9375rem; line-height: 1.72; color: var(--text-muted); }
+.prose-signal p { margin: 0 0 12px; text-wrap: pretty; }
+.prose-signal strong { color: var(--text-strong); font-weight: 600; }
+/* standalone **subhead** paragraphs render as accent headings */
+.prose-signal p:has(> strong:only-child) {
+  margin: 22px 0 2px;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+}
+.prose-signal p:has(> strong:only-child) > strong {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+}
+.prose-signal h1, .prose-signal h2, .prose-signal h3, .prose-signal h4 {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-strong);
+  margin: 22px 0 8px;
+}
+.prose-signal ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 6px 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.prose-signal li { position: relative; padding-left: 18px; }
+.prose-signal li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.prose-signal a { color: var(--link); text-decoration: none; }
+.prose-signal a:hover { color: var(--link-hover); }
+.prose-signal pre {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-size: 13px;
+  margin: 12px 0;
+}
+.prose-signal code { font-family: var(--font-mono); font-size: 0.85em; }

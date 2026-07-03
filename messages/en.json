@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "description": "AI · Software Engineer · Founder. Master's student in Artificial Intelligence and co-founder of Safe Media AI, building Declassifai.",
+    "ogTitle": "Yasin Hessnawi · I build intelligent things"
+  },
+  "nav": {
+    "work": "Work",
+    "projects": "Projects",
+    "toolkit": "Toolkit",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle theme",
+    "language": "Language"
+  },
+  "hero": {
+    "availability": "Open to opportunities",
+    "headline1": "I build",
+    "headlineAccent": "intelligent",
+    "headline2": "things.",
+    "viewWork": "View selected work",
+    "resume": "Résumé",
+    "downloadResume": "Download résumé",
+    "findMe": "Find me",
+    "chipStudy": "M.Sc. AI @ UiA",
+    "chipStatus": "Usually shipping something"
+  },
+  "about": { "eyebrow": "About", "index": "01" },
+  "experience": {
+    "eyebrow": "Experience & Education",
+    "index": "02",
+    "work": "Work",
+    "education": "Education"
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "index": "03",
+    "title": "Things I've shipped & researched",
+    "filterAll": "All",
+    "filterVentures": "Ventures",
+    "filterResearch": "Research",
+    "filterPersonal": "Personal",
+    "featured": "Featured"
+  },
+  "toolkit": { "eyebrow": "Toolkit", "index": "04" },
+  "blog": {
+    "eyebrow": "Skills & Blog",
+    "index": "05",
+    "title": "Notes from the coursework",
+    "subtitle": "Short writeups on what I learned across {count} university courses, from first programming to Tsetlin machines.",
+    "filterAll": "All",
+    "filterMasters": "Master's",
+    "filterBachelor": "Bachelor",
+    "mastersProgramme": "Master's programme",
+    "bachelorProgramme": "Bachelor programme",
+    "englishOnly": "Posts are in English",
+    "readPost": "Read post"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "index": "06",
+    "titleLine1": "Let's build",
+    "titleAccent": "something.",
+    "body": "Want to chat? Send a direct question and I'll respond whenever I can. I ignore all soliciting.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "website": "Website",
+    "phone": "Phone"
+  },
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@domain.com",
+    "message": "Message",
+    "messagePlaceholder": "Say hello…",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sentTitle": "Message sent",
+    "sentBody": "Thanks, I'll get back to you soon.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "The message could not be sent. Email me directly instead.",
+    "mailtoFallback": "Open email app",
+    "validationName": "Please enter your name",
+    "validationEmail": "Please enter a valid email",
+    "validationMessage": "Please write a message"
+  },
+  "footer": { "built": "Designed & built in Norway · © {year}" },
+  "dock": {
+    "top": "Top",
+    "work": "Work",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "theme": "Toggle theme",
+    "language": "Switch language"
+  },
+  "blogPage": {
+    "title": "Skills & Blog",
+    "description": "Notes from {count} university courses",
+    "back": "Back"
+  }
+}

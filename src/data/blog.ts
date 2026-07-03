@@ -7,12 +7,23 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
+export type PostLevel = "Master's" | "Bachelor";
+
 type Metadata = {
   title: string;
   publishedAt: string;
   summary: string;
   image?: string;
+  level: PostLevel;
 };
+
+export function resolveLevel(meta: {
+  level?: unknown;
+  summary?: string;
+}): PostLevel {
+  if (meta.level === "Master's" || meta.level === "Bachelor") return meta.level;
+  return meta.summary?.includes("Master's Programme") ? "Master's" : "Bachelor";
+}
 
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
@@ -36,11 +47,24 @@ export async function markdownToHTML(markdown: string) {
   return p.toString();
 }
 
-export async function getPost(slug: string) {
-  const filePath = path.join("content", `${slug}.mdx`);
+export async function getPost(slug: string, locale: string = "en") {
+  // locale-ready (spec §3.4): content/<locale>/<slug>.mdx overrides content/<slug>.mdx
+  // when it exists (future content/no/); English posts are the fallback.
+  const localized = path.join("content", locale, `${slug}.mdx`);
+  const filePath =
+    locale !== "en" && fs.existsSync(localized)
+      ? localized
+      : path.join("content", `${slug}.mdx`);
   let source = fs.readFileSync(filePath, "utf-8");
-  const { content: rawContent, data: metadata } = matter(source);
+  const { content: rawContent, data } = matter(source);
   const content = await markdownToHTML(rawContent);
+  const metadata: Metadata = {
+    title: String(data.title ?? slug),
+    publishedAt: String(data.publishedAt ?? ""),
+    summary: String(data.summary ?? ""),
+    image: data.image ? String(data.image) : undefined,
+    level: resolveLevel(data),
+  };
   return {
     source: content,
     metadata,
@@ -48,12 +72,12 @@ export async function getPost(slug: string) {
   };
 }
 
-async function getAllPosts(dir: string) {
+async function getAllPosts(dir: string, locale: string = "en") {
   let mdxFiles = getMDXFiles(dir);
   return Promise.all(
     mdxFiles.map(async (file) => {
       let slug = path.basename(file, path.extname(file));
-      let { metadata, source } = await getPost(slug);
+      let { metadata, source } = await getPost(slug, locale);
       return {
         metadata,
         slug,
@@ -63,6 +87,6 @@ async function getAllPosts(dir: string) {
   );
 }
 
-export async function getBlogPosts() {
-  return getAllPosts(path.join(process.cwd(), "content"));
+export async function getBlogPosts(locale: string = "en") {
+  return getAllPosts(path.join(process.cwd(), "content"), locale);
 }

@@ -9,6 +9,15 @@ yarn-error.log*
 .pnp.js
 .next/*
 .vscode/*
-package-lock.json
 .idea/*
 .DS_Store
+
+# design reference sources (not shipped)
+Signal Design System/
+# editor/tooling
+.idea/
+.qodo/
+.DS_Store
+tsconfig.tsbuildinfo
+# local env
+.env*.local

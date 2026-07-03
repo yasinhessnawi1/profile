@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "description": "KI · Dataingeniør · Gründer. Masterstudent i kunstig intelligens og medgründer av Safe Media AI, som bygger Declassifai.",
+    "ogTitle": "Yasin Hessnawi · Jeg bygger intelligente ting"
+  },
+  "nav": {
+    "work": "Arbeid",
+    "projects": "Prosjekter",
+    "toolkit": "Verktøykasse",
+    "blog": "Blogg",
+    "contact": "Kontakt",
+    "getInTouch": "Ta kontakt",
+    "skipToContent": "Hopp til innhold",
+    "toggleTheme": "Bytt tema",
+    "language": "Språk"
+  },
+  "hero": {
+    "availability": "Åpen for muligheter",
+    "headline1": "Jeg bygger",
+    "headlineAccent": "intelligente",
+    "headline2": "ting.",
+    "viewWork": "Se utvalgt arbeid",
+    "resume": "CV",
+    "downloadResume": "Last ned CV",
+    "findMe": "Finn meg",
+    "chipStudy": "M.Sc. KI @ UiA",
+    "chipStatus": "Alltid noe på gang"
+  },
+  "about": { "eyebrow": "Om meg", "index": "01" },
+  "experience": {
+    "eyebrow": "Erfaring og utdanning",
+    "index": "02",
+    "work": "Arbeid",
+    "education": "Utdanning"
+  },
+  "projects": {
+    "eyebrow": "Utvalgt arbeid",
+    "index": "03",
+    "title": "Ting jeg har levert og forsket på",
+    "filterAll": "Alle",
+    "filterVentures": "Satsinger",
+    "filterResearch": "Forskning",
+    "filterPersonal": "Personlig",
+    "featured": "Utvalgt"
+  },
+  "toolkit": { "eyebrow": "Verktøykasse", "index": "04" },
+  "blog": {
+    "eyebrow": "Ferdigheter og blogg",
+    "index": "05",
+    "title": "Notater fra studiene",
+    "subtitle": "Korte oppsummeringer av det jeg lærte i {count} universitetsemner, fra første programmeringskurs til Tsetlin-maskiner.",
+    "filterAll": "Alle",
+    "filterMasters": "Master",
+    "filterBachelor": "Bachelor",
+    "mastersProgramme": "Masterprogram",
+    "bachelorProgramme": "Bachelorprogram",
+    "englishOnly": "Innleggene er på engelsk",
+    "readPost": "Les innlegg"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "index": "06",
+    "titleLine1": "La oss bygge",
+    "titleAccent": "noe.",
+    "body": "Vil du slå av en prat? Send meg et direkte spørsmål, så svarer jeg når jeg kan. Jeg ignorerer all reklame.",
+    "email": "E-post",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "website": "Nettside",
+    "phone": "Telefon"
+  },
+  "form": {
+    "name": "Navn",
+    "namePlaceholder": "Navnet ditt",
+    "email": "E-post",
+    "emailPlaceholder": "deg@domene.no",
+    "message": "Melding",
+    "messagePlaceholder": "Si hei…",
+    "send": "Send melding",
+    "sending": "Sender…",
+    "sentTitle": "Melding sendt",
+    "sentBody": "Takk, jeg svarer så snart jeg kan.",
+    "errorTitle": "Noe gikk galt",
+    "errorBody": "Meldingen kunne ikke sendes. Send meg en e-post direkte i stedet.",
+    "mailtoFallback": "Åpne e-postapp",
+    "validationName": "Skriv inn navnet ditt",
+    "validationEmail": "Skriv inn en gyldig e-postadresse",
+    "validationMessage": "Skriv en melding"
+  },
+  "footer": { "built": "Designet og bygget i Norge · © {year}" },
+  "dock": {
+    "top": "Topp",
+    "work": "Arbeid",
+    "projects": "Prosjekter",
+    "blog": "Blogg",
+    "contact": "Kontakt",
+    "theme": "Bytt tema",
+    "language": "Bytt språk"
+  },
+  "blogPage": {
+    "title": "Ferdigheter og blogg",
+    "description": "Notater fra {count} universitetsemner",
+    "back": "Tilbake"
+  }
+}
