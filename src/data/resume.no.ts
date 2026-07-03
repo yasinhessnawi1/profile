@@ -119,6 +119,46 @@ export const RESUME_NO: ResumeData = {
       tags: ["PyTorch", "NLP", "Computer Vision", "BERT"],
       links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/ml-project", icon: "github" }],
     },
+    {
+      title: "Persona-RAG",
+      dates: "2026",
+      description:
+        "Et forskningsprosjekt om persona-betinget gjenfinning: gir det å forankre RAG i en strukturert persona-representasjon mer identitetskonsistente svar enn kun ledetekst eller finjustering? Kjører Gemma-2-9B og Llama-3.1-8B lokalt i 4-bit, med et Hydra-konfigurert oppsett med reproduserbarhetssjekker.",
+      tags: ["Python", "RAG", "LLMs", "Hugging Face", "Hydra"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/Persona-RAG", icon: "github" }],
+    },
+    {
+      title: "Deeper Neural Networks",
+      dates: "2026",
+      description:
+        "Implementasjoner fra avansert dyp læring: selv-attention og transformer-chatboter, studier av grunne mot dype nett og tapsfunksjoner, CNN-er, embeddings med mixture-of-experts, og små agentiske forskningssystemer, alt med reproduserbare eksperimenter og rapporter.",
+      tags: ["PyTorch", "Transformers", "CNNs", "Embeddings", "MoE"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/Deeper-Neural-Networks", icon: "github" }],
+    },
+    {
+      title: "RL på kinasjakk",
+      dates: "2026",
+      description:
+        "Forsterkende læring-agenter for kinasjakk, bygget på emnets klient/tjener-rammeverk for spillet. Håndterer stor forgreningsfaktor og lange horisonter gjennom nøye utforming av belønning og tilstandsrepresentasjon.",
+      tags: ["Python", "Reinforcement Learning", "Game AI"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/reinforcement-learning-on-chinese-checkers", icon: "github" }],
+    },
+    {
+      title: "UiA RAG-chatbot",
+      dates: "2026",
+      description:
+        "En gjenfinnings-forsterket chatbot over UiA-IKT-emnekorpuset. Hybrid BM25- og tett gjenfinning med valgfri cross-encoder-reranking, evaluert mot et håndskrevet spørsmål-svar-sett, gjennom en pipeline for innlesing → indeksering → spørring → evaluering.",
+      tags: ["Python", "RAG", "BM25", "Dense Retrieval", "Reranking"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/uia-rag-chatbot", icon: "github" }],
+    },
+    {
+      title: "CyberSight DW",
+      dates: "2026",
+      description:
+        "Et data warehouse med flere backends for trusseletterretning innen cybersikkerhet. Strømmer CICIDS-2017-datasettet (~2,8 mill. rader) gjennom Kafka til PostgreSQL (stjerneskjema), MongoDB (dokumenter) og Neo4j (angrepsgraf) samtidig, med et Streamlit-dashbord for analyse og en FastAPI-tjeneste for drift.",
+      tags: ["Python", "Kafka", "PostgreSQL", "Neo4j", "Streamlit"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/CyberSight_DW", icon: "github" }],
+    },
   ],
   personal: [
     {
@@ -147,19 +187,6 @@ export const RESUME_NO: ResumeData = {
         "«When to Watch» lar deg holde oversikt over filmer, serier og anime på ett sted. Se når neste episode sendes og hvor den kan strømmes, med smarte anbefalinger.",
       tags: ["Kotlin", "Android", "XML"],
       links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/1-2-watch", icon: "github" }],
-    },
-    {
-      title: "ElectroMart",
-      dates: "2024",
-      // no image on purpose (spec §9): the 1.7MB electromart.png stays off the page;
-      // the ProjectCard placeholder tile renders instead
-      description:
-        "Fullstack netthandel for elektronikk: React-frontend, Go/Gin REST-API og MariaDB. Kategorier, produktvisninger, handlekurv og kasse.",
-      tags: ["Go", "React", "MariaDB", "Gin"],
-      links: [
-        { type: "Backend", href: "https://github.com/yasinhessnawi1/elektromart-server", icon: "github" },
-        { type: "Frontend", href: "https://github.com/yasinhessnawi1/ElectroMart", icon: "github" },
-      ],
     },
   ],
   skills: {

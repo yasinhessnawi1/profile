@@ -19,8 +19,8 @@ describe("getResume", () => {
     expect(no.work).toHaveLength(en.work.length);
     expect(no.education).toHaveLength(en.education.length);
     expect(no.featured).toHaveLength(2);
-    expect(no.research).toHaveLength(2);
-    expect(no.personal).toHaveLength(4);
+    expect(no.research).toHaveLength(en.research.length);
+    expect(no.personal).toHaveLength(en.personal.length);
     expect(Object.keys(no.skills)).toHaveLength(Object.keys(en.skills).length);
     expect(no.stats).toHaveLength(4);
   });

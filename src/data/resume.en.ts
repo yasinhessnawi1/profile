@@ -119,6 +119,46 @@ export const RESUME_EN: ResumeData = {
       tags: ["PyTorch", "NLP", "Computer Vision", "BERT"],
       links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/ml-project", icon: "github" }],
     },
+    {
+      title: "Persona-RAG",
+      dates: "2026",
+      description:
+        "A research project on persona-conditioned retrieval: does grounding RAG in a structured persona representation give more identity-consistent answers than prompt-only or fine-tuning? Runs Gemma-2-9B and Llama-3.1-8B locally in 4-bit, with a Hydra-configured, reproducibility-gated harness.",
+      tags: ["Python", "RAG", "LLMs", "Hugging Face", "Hydra"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/Persona-RAG", icon: "github" }],
+    },
+    {
+      title: "Deeper Neural Networks",
+      dates: "2026",
+      description:
+        "Implementations from advanced deep learning: self-attention and transformer chatbots, shallow-vs-deep and loss-function studies, CNNs, embeddings with mixture-of-experts, and small agentic research systems, each with reproducible experiments and reports.",
+      tags: ["PyTorch", "Transformers", "CNNs", "Embeddings", "MoE"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/Deeper-Neural-Networks", icon: "github" }],
+    },
+    {
+      title: "RL on Chinese Checkers",
+      dates: "2026",
+      description:
+        "Reinforcement-learning agents for Chinese Checkers, built on the course's client/server game framework. Tackles a large branching factor and long horizons through careful reward and state-representation design.",
+      tags: ["Python", "Reinforcement Learning", "Game AI"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/reinforcement-learning-on-chinese-checkers", icon: "github" }],
+    },
+    {
+      title: "UiA RAG Chatbot",
+      dates: "2026",
+      description:
+        "A retrieval-augmented chatbot over the UiA-IKT course corpus. Hybrid BM25 + dense retrieval with optional cross-encoder reranking, evaluated against a hand-written QA set, across an ingest → index → query → evaluate pipeline.",
+      tags: ["Python", "RAG", "BM25", "Dense Retrieval", "Reranking"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/uia-rag-chatbot", icon: "github" }],
+    },
+    {
+      title: "CyberSight DW",
+      dates: "2026",
+      description:
+        "A multi-backend data warehouse for cybersecurity threat intelligence. Streams the CICIDS-2017 dataset (~2.8M records) through Kafka into PostgreSQL (star schema), MongoDB (documents), and Neo4j (attack graph) at once, with a Streamlit analytics dashboard and a FastAPI ops service.",
+      tags: ["Python", "Kafka", "PostgreSQL", "Neo4j", "Streamlit"],
+      links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/CyberSight_DW", icon: "github" }],
+    },
   ],
   personal: [
     {
@@ -147,19 +187,6 @@ export const RESUME_EN: ResumeData = {
         "“When to Watch” lets you track movies, series and anime in one place. Know when the next episode airs and where to stream it, with smart recommendations.",
       tags: ["Kotlin", "Android", "XML"],
       links: [{ type: "Repo", href: "https://github.com/yasinhessnawi1/1-2-watch", icon: "github" }],
-    },
-    {
-      title: "ElectroMart",
-      dates: "2024",
-      // no image on purpose (spec §9): the 1.7MB electromart.png stays off the page;
-      // the ProjectCard placeholder tile renders instead
-      description:
-        "Full-stack electronics e-commerce: React front-end, Go/Gin REST API, MariaDB. Categories, product views, cart and checkout.",
-      tags: ["Go", "React", "MariaDB", "Gin"],
-      links: [
-        { type: "Backend", href: "https://github.com/yasinhessnawi1/elektromart-server", icon: "github" },
-        { type: "Frontend", href: "https://github.com/yasinhessnawi1/ElectroMart", icon: "github" },
-      ],
     },
   ],
   skills: {
