@@ -1,0 +1,64 @@
+{
+  "projectId": "78e3c8fc-2757-4429-acee-bb9228f8dcce",
+  "shape": "package",
+  "pkg": "signal-ds",
+  "globalName": "SignalDS",
+  "entry": ".design-sync/pkg/index.ts",
+  "srcDir": "../../src/components/signal",
+  "buildCmd": "node .design-sync/build.mjs",
+  "tsconfig": "../tsconfig.json",
+  "cssEntry": "signal.css",
+  "docsDir": "../docs",
+  "dtsPropsFor": {
+    "Icon": "/** A glyph from the Signal (Lucide) icon set. */\nname: \"arrow-up-right\" | \"arrow-right\" | \"arrow-down\" | \"chevron-right\" | \"external-link\" | \"globe\" | \"mail\" | \"phone\" | \"map-pin\" | \"github\" | \"linkedin\" | \"sparkles\" | \"cpu\" | \"shield\" | \"graduation-cap\" | \"briefcase\" | \"star\" | \"code\" | \"download\" | \"folder\" | \"sun\" | \"moon\" | \"menu\" | \"x\" | \"check\" | \"plus\" | \"circle-dot\" | \"notebook\" | \"languages\";\n/** Width = height in px. Default 20. */\nsize?: number;\n/** Default 2. */\nstrokeWidth?: number;\nclassName?: string;",
+    "Input": "/** Mono uppercase label above the field. */\nlabel?: string;\n/** Helper line under the field; turns danger-red with `error`. */\nhint?: string;\n/** Leading icon, single-line fields only. */\nicon?: \"arrow-up-right\" | \"arrow-right\" | \"arrow-down\" | \"chevron-right\" | \"external-link\" | \"globe\" | \"mail\" | \"phone\" | \"map-pin\" | \"github\" | \"linkedin\" | \"sparkles\" | \"cpu\" | \"shield\" | \"graduation-cap\" | \"briefcase\" | \"star\" | \"code\" | \"download\" | \"folder\" | \"sun\" | \"moon\" | \"menu\" | \"x\" | \"check\" | \"plus\" | \"circle-dot\" | \"notebook\" | \"languages\";\n/** Render a textarea instead of an input. */\nmultiline?: boolean;\n/** Textarea rows. Default 4. */\nrows?: number;\nerror?: boolean;\nid?: string;\nclassName?: string;\ntype?: string;\nname?: string;\nplaceholder?: string;\nvalue?: string;\ndefaultValue?: string;\nrequired?: boolean;\ndisabled?: boolean;\nautoComplete?: string;\nmaxLength?: number;\nonChange?: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;",
+    "SocialLink": "icon: \"arrow-up-right\" | \"arrow-right\" | \"arrow-down\" | \"chevron-right\" | \"external-link\" | \"globe\" | \"mail\" | \"phone\" | \"map-pin\" | \"github\" | \"linkedin\" | \"sparkles\" | \"cpu\" | \"shield\" | \"graduation-cap\" | \"briefcase\" | \"star\" | \"code\" | \"download\" | \"folder\" | \"sun\" | \"moon\" | \"menu\" | \"x\" | \"check\" | \"plus\" | \"circle-dot\" | \"notebook\" | \"languages\";\n/** Mono caption; also the aria-label when iconOnly. */\nlabel: string;\n/** Main line, e.g. the handle or address. */\nvalue?: string;\n/** http(s) links open in a new tab. */\nhref: string;\n/** Round 44px icon button instead of the full row. */\niconOnly?: boolean;\nclassName?: string;",
+    "ProjectCard": "title: string;\ndescription: string;\n/** Mono date range, e.g. \"2024 – Present\". */\ndates: string;\n/** 16:9 cover image URL. Omitted (or failing to load) shows the lime-glow folder placeholder. */\nimage?: string;\ntags: string[];\n/** Pill links under the body, e.g. { type: \"Source\", href, icon: \"github\" }. */\nlinks: { type: string; href: string; icon: \"arrow-up-right\" | \"arrow-right\" | \"arrow-down\" | \"chevron-right\" | \"external-link\" | \"globe\" | \"mail\" | \"phone\" | \"map-pin\" | \"github\" | \"linkedin\" | \"sparkles\" | \"cpu\" | \"shield\" | \"graduation-cap\" | \"briefcase\" | \"star\" | \"code\" | \"download\" | \"folder\" | \"sun\" | \"moon\" | \"menu\" | \"x\" | \"check\" | \"plus\" | \"circle-dot\" | \"notebook\" | \"languages\" }[];\n/** Target of the title and cover; opens in a new tab. */\nhref: string;\nfeatured?: boolean;\n/** Cover badge text when featured. Default \"Featured\". */\nfeaturedLabel?: string;",
+    "Dock": "/** Links (href) or buttons (onClick); { type: \"divider\" } draws a separator. label is the tooltip and aria-label. */\nitems: { type?: \"item\" | \"divider\"; icon?: \"arrow-up-right\" | \"arrow-right\" | \"arrow-down\" | \"chevron-right\" | \"external-link\" | \"globe\" | \"mail\" | \"phone\" | \"map-pin\" | \"github\" | \"linkedin\" | \"sparkles\" | \"cpu\" | \"shield\" | \"graduation-cap\" | \"briefcase\" | \"star\" | \"code\" | \"download\" | \"folder\" | \"sun\" | \"moon\" | \"menu\" | \"x\" | \"check\" | \"plus\" | \"circle-dot\" | \"notebook\" | \"languages\"; label?: string; href?: string; onClick?: () => void }[];\nclassName?: string;"
+  },
+  "overrides": {
+    "Avatar": {
+      "cardMode": "column"
+    },
+    "Badge": {
+      "cardMode": "column"
+    },
+    "BlurFade": {
+      "cardMode": "column"
+    },
+    "Button": {
+      "cardMode": "column"
+    },
+    "Card": {
+      "cardMode": "column"
+    },
+    "Dock": {
+      "cardMode": "column"
+    },
+    "Icon": {
+      "cardMode": "column"
+    },
+    "Input": {
+      "cardMode": "column"
+    },
+    "ProjectCard": {
+      "cardMode": "column"
+    },
+    "ResumeCard": {
+      "cardMode": "column"
+    },
+    "SectionLabel": {
+      "cardMode": "column"
+    },
+    "SocialLink": {
+      "cardMode": "column"
+    },
+    "Stat": {
+      "cardMode": "column"
+    },
+    "Tag": {
+      "cardMode": "column"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
