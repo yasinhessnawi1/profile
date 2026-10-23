@@ -199,5 +199,7 @@ export const CONTENT = {
   linkedin,
   github,
   cv: (l: Lang) => `/api/resume?lang=${l}`,
+  // not in the design export: the site's own portrait, cropped from /me.JPG
+  portrait: { src: "/me-portrait.jpg", alt: "Yasin Hessnawi" },
 };
 export type Content = typeof CONTENT;

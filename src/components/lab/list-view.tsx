@@ -4,6 +4,7 @@
 // swipe, "Read more" folds, a section dock). Shown for phones, reduced motion,
 // no WebGL, ?list, or "View as list"; always server-rendered so the content is in
 // the HTML. Port of the design's renderList + 2D network background.
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CONTENT, type Copy, type Lang, type ProjectId } from "./content";
 import {
@@ -64,6 +65,7 @@ export function ListView({ L, lang, active, webgl, langToggle, notesFilter, onNo
         {langToggle}
       </div>
       <header className="lv-hero">
+        <Image className="lv-portrait" src={C.portrait.src} alt={C.portrait.alt} width={204} height={204} sizes="(min-width: 1100px) 204px, 84px" priority />
         <span className="pill"><i />{u.open}</span>
         <p className="kicker">{u.title}</p>
         <h1>{L.hero}</h1>
