@@ -37,6 +37,7 @@
     "shiki": "^1.7.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.169.0",
     "unified": "^11.0.4",
     "zod": "^3.25.76"
   },

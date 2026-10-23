@@ -56,7 +56,7 @@ export function ProjectCard({
             className="object-cover saturate-[1.02] transition-transform duration-slow ease-out group-hover:scale-[1.04]"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(120%_120%_at_20%_0%,rgba(199,242,63,0.18),transparent_55%)]">
+          <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(120%_120%_at_20%_0%,rgba(91,200,255,0.18),transparent_55%)]">
             <Icon name="folder" size={34} className="text-fg-faint" />
           </div>
         )}

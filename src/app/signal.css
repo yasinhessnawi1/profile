@@ -1,5 +1,8 @@
 /* ============================================================
-   SIGNAL — token layer. Source of truth: Signal Design System/tokens/*
+   SIGNAL — token layer. Layout and type follow Signal Design System/tokens/*;
+   the colours follow the Gate (the 3D lab on the home page): cool ink, one
+   cyan accent, red/amber/green for status. The "signal" ramp name is kept
+   for the accent so components didn't have to change.
    Dark-first: :root IS the dark theme. .theme-light overrides.
    Font families are provided by next/font (--font-display/sans/mono).
    `.theme-dark` aliases :root so the next-themes class always resolves.
@@ -7,71 +10,72 @@
 
 :root,
 .theme-dark {
-  /* --- Warm ink neutral ramp --- */
-  --ink-990: #0C0C0A;
-  --ink-950: #101010;
-  --ink-900: #16150F;
-  --ink-850: #1C1B15;
-  --ink-800: #24231C;
-  --ink-750: #2C2B22;
-  --ink-700: #37352B;
-  --ink-600: #4B4A3D;
-  --ink-500: #6B6A5A;
-  --ink-400: #918F7D;
-  --ink-300: #B7B4A2;
-  --ink-200: #D6D3C4;
-  --ink-100: #ECEADE;
-  --ink-050: #F5F2E8;
-  --paper:   #F7F4EC;
+  /* --- Cool ink neutral ramp (the Gate's night-blue) --- */
+  --ink-990: #0B1020;
+  --ink-950: #0D1325;
+  --ink-900: #10172B;
+  --ink-850: #141C33;
+  --ink-800: #19223D;
+  --ink-750: #1F2946;
+  --ink-700: #283352;
+  --ink-600: #3A4565;
+  --ink-500: #6F7C9C;
+  --ink-400: #8792AD;
+  --ink-300: #B4BCCD;
+  --ink-200: #CDD3DE;
+  --ink-100: #E2E2DE;
+  --ink-050: #E9E6DF;
+  --paper:   #F3F1EC;
 
-  /* --- Signal (electric lime) --- */
-  --signal-700: #7E9E1E;
-  --signal-600: #A6CF2E;
-  --signal-500: #C7F23F;
-  --signal-400: #D7F86E;
-  --signal-300: #E6FBA1;
-  --signal-glow: rgba(199, 242, 63, 0.28);
+  /* --- Signal accent (the Gate's cyan) --- */
+  --signal-700: #176F9F;
+  --signal-600: #1F8FCB;
+  --signal-500: #5BC8FF;
+  --signal-400: #86D8FF;
+  --signal-300: #9FDCFF;
+  --signal-glow: rgba(91, 200, 255, 0.28);
 
   /* --- Redact (secondary, sparing) --- */
-  --redact-600: #E0472A;
-  --redact-500: #FF5C3C;
-  --redact-400: #FF8163;
+  --redact-600: #E8484D;
+  --redact-500: #FF5A5F;
+  --redact-400: #FF8A8D;
 
   /* --- Status hues --- */
-  --azure-500: #58B7FF;
-  --amber-500: #F5B93B;
+  --azure-500: #4C8DFF;
+  --amber-500: #FFB547;
   --rose-500:  #FF6B81;
+  --green-500: #3DDC97;
 
   /* --- Semantic aliases (dark default) --- */
   --bg:            var(--ink-990);
-  --bg-tint:       #100F0A;
+  --bg-tint:       #0E1528;
   --surface:       var(--ink-900);
   --surface-2:     var(--ink-850);
   --elevated:      var(--ink-800);
-  --overlay:       rgba(8, 8, 6, 0.72);
+  --overlay:       rgba(6, 9, 18, 0.72);
 
   --text:          var(--ink-050);
-  --text-strong:   #FBFAF3;
+  --text-strong:   #F5F3EE;
   --text-muted:    var(--ink-300);
   --text-subtle:   var(--ink-400);
   --text-faint:    var(--ink-500);
   --text-inverse:  var(--ink-990);
 
-  --border:        rgba(236, 234, 222, 0.10);
-  --border-strong: rgba(236, 234, 222, 0.18);
-  --border-signal: rgba(199, 242, 63, 0.45);
+  --border:        rgba(233, 230, 223, 0.13);
+  --border-strong: rgba(233, 230, 223, 0.22);
+  --border-signal: rgba(91, 200, 255, 0.45);
 
   --accent:            var(--signal-500);
   --accent-hover:      var(--signal-400);
   --accent-press:      var(--signal-600);
   --accent-foreground: var(--ink-990);
-  --accent-quiet:      rgba(199, 242, 63, 0.12);
+  --accent-quiet:      rgba(91, 200, 255, 0.12);
 
-  --link:          var(--signal-400);
-  --link-hover:    var(--signal-300);
+  --link:          var(--signal-300);
+  --link-hover:    var(--ink-050);
   --focus-ring:    var(--signal-500);
 
-  --success: var(--signal-500);
+  --success: var(--green-500);
   --warning: var(--amber-500);
   --danger:  var(--redact-500);
   --info:    var(--azure-500);
@@ -141,11 +145,11 @@
 
 .theme-light {
   --bg:            var(--paper);
-  --bg-tint:       #EFEBDF;
+  --bg-tint:       #E9E6DF;
   --surface:       #FFFFFF;
-  --surface-2:     #F1EEE3;
+  --surface-2:     #ECEAE4;
   --elevated:      #FFFFFF;
-  --overlay:       rgba(30, 29, 22, 0.45);
+  --overlay:       rgba(11, 16, 32, 0.45);
 
   --text:          var(--ink-900);
   --text-strong:   var(--ink-990);
@@ -154,24 +158,24 @@
   --text-faint:    var(--ink-400);
   --text-inverse:  var(--paper);
 
-  --border:        rgba(22, 21, 15, 0.12);
-  --border-strong: rgba(22, 21, 15, 0.22);
-  --border-signal: rgba(126, 158, 30, 0.55);
+  --border:        rgba(11, 16, 32, 0.12);
+  --border-strong: rgba(11, 16, 32, 0.22);
+  --border-signal: rgba(23, 111, 159, 0.5);
 
   --accent:            var(--signal-600);
   --accent-hover:      var(--signal-700);
   --accent-press:      var(--signal-700);
   --accent-foreground: var(--ink-990);
-  --accent-quiet:      rgba(166, 207, 46, 0.16);
+  --accent-quiet:      rgba(31, 143, 203, 0.14);
 
   --link:          var(--signal-700);
   --link-hover:    var(--signal-600);
   --focus-ring:    var(--signal-600);
 
-  --shadow-xs: 0 1px 2px rgba(30,29,22,0.06);
-  --shadow-sm: 0 2px 10px rgba(30,29,22,0.08);
-  --shadow-md: 0 10px 30px rgba(30,29,22,0.10);
-  --shadow-lg: 0 26px 60px rgba(30,29,22,0.14);
+  --shadow-xs: 0 1px 2px rgba(11,16,32,0.06);
+  --shadow-sm: 0 2px 10px rgba(11,16,32,0.08);
+  --shadow-md: 0 10px 30px rgba(11,16,32,0.10);
+  --shadow-lg: 0 26px 60px rgba(11,16,32,0.14);
   --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
 
   color-scheme: light;

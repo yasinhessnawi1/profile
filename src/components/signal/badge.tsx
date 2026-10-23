@@ -4,9 +4,9 @@ const TONES = {
   signal: "border-line-signal bg-accent-quiet text-accent",
   neutral: "border-line bg-surface-2 text-fg-muted",
   outline: "border-line-strong bg-transparent text-fg-muted",
-  redact: "border-[rgba(255,92,60,0.4)] bg-[rgba(255,92,60,0.12)] text-redact-500",
-  azure: "border-[rgba(88,183,255,0.4)] bg-[rgba(88,183,255,0.12)] text-info",
-  amber: "border-[rgba(245,185,59,0.4)] bg-[rgba(245,185,59,0.12)] text-warning",
+  redact: "border-[rgba(255,90,95,0.4)] bg-[rgba(255,90,95,0.12)] text-redact-500",
+  azure: "border-[rgba(76,141,255,0.4)] bg-[rgba(76,141,255,0.12)] text-info",
+  amber: "border-[rgba(255,181,71,0.4)] bg-[rgba(255,181,71,0.12)] text-warning",
 } as const;
 
 const DOTS = {

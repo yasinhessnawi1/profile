@@ -1,11 +1,11 @@
 # Signal: building with it
 
-Signal is the dark-first design system of Yasin Hessnawi's portfolio site: warm ink neutrals, one electric-lime accent, Space Grotesk / Instrument Sans / JetBrains Mono. Components are on `window.SignalDS`. Styling is Tailwind utility classes mapped onto Signal CSS tokens.
+Signal is the dark-first design system of Yasin Hessnawi's portfolio site: cool night-blue ink neutrals, one cyan accent, Space Grotesk / Instrument Sans / JetBrains Mono. Components are on `window.SignalDS`. Styling is Tailwind utility classes mapped onto Signal CSS tokens.
 
 ## Setup
 
 - No provider is needed. The tokens sit on `:root`, which is the dark theme. Every screen needs a dark surface: put `bg-bg font-sans text-fg` on your root element. Without it, light text such as `text-fg` and Stat values disappears on a white page.
-- For the light theme, add the `theme-light` class to `<html>` or to any wrapper. Everything inside re-tokens (paper background, darker lime). Never hard-code hex colours.
+- For the light theme, add the `theme-light` class to `<html>` or to any wrapper. Everything inside re-tokens (paper background, deeper cyan). Never hard-code hex colours.
 - The fonts come with the stylesheet (Google Fonts): `font-display` (Space Grotesk), `font-sans` (Instrument Sans, the body default) and `font-mono` (JetBrains Mono).
 - Utilities are compiled ahead of time; there is no JIT. Use the families below. Before using any other class, check that it exists in `_ds_bundle.css`. Otherwise use `style={{ color: "var(--text-muted)" }}`.
 
@@ -28,8 +28,8 @@ Signal's own classes (plain CSS):
 - `display`: hero and section headings, paired with `text-3xl` or `text-4xl`.
 - `heading`: smaller display headings.
 - `kicker`: a mono uppercase eyebrow.
-- `mark-signal`: turns one word of a headline lime.
-- `mark-underline`: a lime underline.
+- `mark-signal`: turns one word of a headline cyan.
+- `mark-underline`: a cyan underline.
 - `container`, `container-narrow`, `container-wide`: a centred column with the page gutter.
 - `section`: vertical section rhythm.
 - `bg-dots`, `bg-grid`, `glow-signal`: background textures.
@@ -37,7 +37,7 @@ Signal's own classes (plain CSS):
 
 Rules:
 
-- Use one lime accent per view.
+- Use one cyan accent per view.
 - Cards are `bg-surface border border-line rounded-lg` (or simply `<Card>`).
 - Mono uppercase is only for labels, eyebrows and tags. Everything else is sentence case.
 - Copy is in the first person, plain and confident, with no emoji.
@@ -49,7 +49,7 @@ Rules:
 - `ResumeCard`: `description` is a single string with items separated by "•". When it is set, the card becomes a button that expands those items as bullets.
 - `ProjectCard`: `tags` and `links` are required (pass `[]`). `image` is a 16:9 URL; leave it out to get the placeholder.
 - `BlurFade`: its content starts invisible and blur-fades in when scrolled into view. Use `delay` (in seconds) to stagger items.
-- `Dock`: on the site it floats inside `fixed bottom-5 left-1/2 z-50 -translate-x-1/2`.
+- `Dock`: a floating nav pill; position it yourself (for example fixed and centred at the bottom of the screen).
 
 ## Where the truth lives
 
