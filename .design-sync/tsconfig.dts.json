@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./pkg/types",
+    "rootDir": "../src",
+    "incremental": false,
+    "plugins": []
+  },
+  "include": ["../src/components/signal/*.tsx", "../next-env.d.ts"],
+  "exclude": []
+}

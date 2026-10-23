@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { homeHref } from "@/lib/home-links";
 
 export function Footer({ locale }: { locale: string }) {
   const tNav = useTranslations("nav");
@@ -22,7 +23,7 @@ export function Footer({ locale }: { locale: string }) {
           {links.map((id) => (
             <a
               key={id}
-              href={`${base}/#${id}`}
+              href={homeHref(base, id)}
               className="px-2.5 py-1.5 font-mono text-xs uppercase tracking-wide text-fg-muted no-underline hover:text-fg"
             >
               {tNav(id)}

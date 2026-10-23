@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/signal/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { OpenLabButton } from "@/components/lab/open-lab-button";
+import { homeHref } from "@/lib/home-links";
 
 const SECTION_IDS = ["work", "projects", "toolkit", "blog", "contact"] as const;
 
@@ -53,7 +55,7 @@ export function TopBar() {
           : "border-b border-transparent bg-transparent"
       )}
     >
-      <a href={`${base}/#top`} className="flex items-center gap-3 no-underline">
+      <a href={`${base}/`} className="flex items-center gap-3 no-underline">
         <span className="flex h-[38px] w-[38px] items-center justify-center rounded-md bg-signal-500 font-display text-[17px] font-bold tracking-tighter text-ink-990 shadow-[0_0_22px_var(--signal-glow)]">
           YH
         </span>
@@ -65,7 +67,7 @@ export function TopBar() {
         {nav.map(({ id, label }) => (
           <a
             key={id}
-            href={`${base}/#${id}`}
+            href={homeHref(base, id)}
             className={cn(
               "rounded-sm px-3 py-2 font-mono text-xs uppercase tracking-wide no-underline transition-colors duration-fast ease-out",
               active === id ? "text-accent" : "text-fg-muted hover:text-fg"
@@ -76,12 +78,13 @@ export function TopBar() {
         ))}
       </nav>
       <div className="flex items-center gap-2.5">
+        <OpenLabButton />
         <LanguageSwitcher />
         <ThemeToggle />
         <Button
           variant="primary"
           size="sm"
-          href={`${base}/#contact`}
+          href={homeHref(base, "contact")}
           className="max-[620px]:hidden"
         >
           {t("getInTouch")}

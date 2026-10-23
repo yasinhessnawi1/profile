@@ -1,0 +1,11 @@
+/* design-sync stylesheet entry: the site's own CSS (tokens + Tailwind layers),
+   plus the fonts next/font provides at runtime on the site. */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@100..800&display=swap");
+@import "../src/app/globals.css";
+
+/* next/font sets these on <body> in src/app/[locale]/layout.tsx. */
+:root {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
