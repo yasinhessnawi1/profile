@@ -2,6 +2,7 @@
 
 // Panel views for the lab: React ports of the design's renderers, same markup and
 // class names (styled by lab.css). Interaction state lives in LabApp.
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CONTENT, type Copy, type Lang, type ProjectId } from "./content";
 import { REPLAY } from "./replay-r4g2";
@@ -261,7 +262,10 @@ export function AboutView({ L, lang, inList = false }: { L: Copy; lang: Lang; in
         <h2 className="lv-h">{a.title}</h2>
       ) : (
         <>
-          <p className="kicker">{a.title}</p>
+          <div className="about-id">
+            <Image className="about-avatar" src={C.portrait.src} alt={C.portrait.alt} width={56} height={56} />
+            <p className="kicker">{a.title}</p>
+          </div>
           <h2 className="ptitle hero-line" id="panelTitle" tabIndex={-1}>{L.hero}</h2>
           <p className="lead">{L.bio}</p>
         </>

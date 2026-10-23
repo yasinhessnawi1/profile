@@ -718,6 +718,13 @@ export async function buildLab({ scene, camera, UI, net, renderer, content, repl
     at(rb(1.6, 0.03, 0.12, 0.012, M.ink), -5.3, 1.3, -7.32);
     [[0x1c2440, -5.65], [PAL.red, -5.4], [PAL.green, -5.15]].forEach(([c, x]) => { const m = new THREE.Mesh(new THREE.CapsuleGeometry(0.022, 0.15, 4, 8), new THREE.MeshPhysicalMaterial({ color: c, roughness: 0.3, clearcoat: 1 })); m.rotation.z = Math.PI / 2; at(m, x, 1.34, -7.3); });
     hitBox(3.2, 2.1, 0.3, -5.3, 2.3, -7.3, 'whiteboard');
+    // site addition: the portrait, pinned over the board's top-right corner as a Polaroid
+    const tex = new THREE.TextureLoader().load(C.portrait.src);
+    tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+    const pol = new THREE.Group(); pol.position.set(-5.3 + 1.12, 2.3 + 0.64, -7.3); pol.rotation.z = -0.07; scene.add(pol);
+    const card = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.5, 0.008), M.paper); card.castShadow = true; pol.add(card);
+    at(new THREE.Mesh(new THREE.PlaneGeometry(0.36, 0.36), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.6 })), 0, 0.04, 0.0045, pol);
+    at(new THREE.Mesh(new THREE.CylinderGeometry(0.032, 0.032, 0.03, 20).rotateX(Math.PI / 2), new THREE.MeshPhysicalMaterial({ color: PAL.red, roughness: 0.3, clearcoat: 1 })), 0, 0.255, 0.02, pol);
   }
   function drawWhiteboard() {
     const g = wbTex.g; let s = 3; const j = () => ((s = (s * 16807) % 2147483647) / 2147483647 - 0.5) * 3;

@@ -314,3 +314,12 @@ html:not(.gate-list):has(.gate.mode-3d) body{overflow:hidden;height:100vh}
 @media (prefers-reduced-motion:reduce){
 .gate,.gate *,.gate *::before,.gate *::after{animation:none!important;transition:none!important}
 }
+/* The portrait (site addition, not in the export): beside the list hero on
+   wide screens, a small ring above the pill on narrower ones, and next to
+   the About panel's heading. The 3D lab pins it to the whiteboard. */
+.gate .lv-hero{position:relative}
+.gate .lv-portrait{width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 0 22px;border:2px solid rgba(91,200,255,.55);box-shadow:0 0 0 5px rgba(91,200,255,.07),0 0 32px rgba(91,200,255,.25)}
+@media (min-width:1100px){.gate .lv-portrait{position:absolute;right:0;top:56px;width:204px;height:204px;margin:0;box-shadow:0 0 0 8px rgba(91,200,255,.07),0 0 70px rgba(91,200,255,.28)}}
+.gate .about-id{display:flex;align-items:center;gap:14px;margin-top:14px}
+.gate .about-id .kicker{margin:0}
+.gate .about-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1.5px solid rgba(91,200,255,.5);box-shadow:0 0 22px rgba(91,200,255,.22)}
